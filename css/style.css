@@ -1,0 +1,80 @@
+:root{
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+html{
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  position: relative;
+  background-color: var(--dark-cyan);
+  height: 100vh;
+}
+/* -------------------- COMPONENTES -------------------- */
+.bg{
+  position: absolute;
+  z-index:-1;
+}
+.bg-top{
+  top: -10rem;
+  left: -10rem;
+}
+.bg-bottom{
+  bottom: -8rem;
+  right: -9rem;
+}
+@media screen and (min-width: 68rem){
+  .bg-top{
+    top: -40rem;
+    left: -20rem;
+  }
+  .bg-bottom{
+    bottom: -30rem;
+    right: -30rem;
+  }
+}
+@media screen and (min-width: 85rem){
+  .bg{
+    max-width: 60rem;
+  }
+}
+/* -------------------- ESTILOS -------------------- */
+.card{
+  max-width: 30rem;
+  border-radius: 10px;
+}
+.main-card{
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.card-header > img{
+  border-radius: 10px 10px 0 0;
+}
+.card-body-imagen{
+  position: relative;
+  height: 4rem;
+}
+.card-body-imagen > img{
+  position: absolute;
+  width: 80px;
+  border-radius: 50%;
+  border: thick solid white;
+  top: -3rem;
+  left: 8rem;
+}
+.card-body-profie{
+  border-bottom: thin solid rgba(128, 128, 128, 0.199);
+}
+.card-body-stats{
+  justify-content: space-evenly;
+}
+/* -------------------- ATTRIBUTION -------------------- */
+.attribution{
+  position: absolute;
+  bottom: 0;
+  background-color: var(--dark-cyan);
+}
